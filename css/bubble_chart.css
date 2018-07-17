@@ -1,0 +1,126 @@
+a, a:visited, a:active {
+  color: #444;
+}
+
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item1, item2, item3{
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.item4{
+  flex-grow: 1;
+}
+
+.ledgend{
+  /* background-color: darkgreen; */
+  display: block;
+}
+
+.ledgend__wrapper{
+  width: 80%;
+  margin: auto;
+  /* background-color: #fff; */
+  display: block;
+}
+
+.ledgend__wrapper > .list
+{
+  background-color: rgba(0,50,50,0.8);
+  border-radius: 3%;
+}
+
+.ledgend__wrapper > .list li{
+  padding: 3px;
+  font-weight: bold;
+  /* list-style: none;
+   */
+   cursor: pointer;
+   list-style-type: circle;
+}
+
+.ledgend__wrapper > .list li:hover{
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.mapper{
+  display: flex;  
+  flex-grow: 1;
+}
+
+.button {
+  min-width: 130px;
+  padding: 4px 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  text-decoration: none;
+}
+ 
+svg{
+  border: 1px solid #000;
+}
+
+.button.active {
+  background: #000;
+  color: #fff;
+}
+
+
+.points{
+  text-transform: uppercase;
+}
+
+#vis {
+  width: 940px;
+  height: 600px;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+#toolbar {
+  margin-top: 10px;
+}
+
+.year {
+  font-size: 21px;
+  fill: #aaa;
+  cursor: default;
+}
+
+.tooltip {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+  -moz-border-radius:5px;
+	border-radius: 5px;
+  border: 2px solid #000;
+  background: #fff;
+	opacity: .9;
+  color: black;
+	padding: 10px;
+	width: 300px;
+	font-size: 12px;
+	z-index: 10;
+}
+
+.tooltip .title {
+	font-size: 13px;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+
+.footer {
+  text-align: center;
+}
